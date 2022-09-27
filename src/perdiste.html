@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdiste</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="ganaste-perdiste.css">
+    <link rel="stylesheet" href="agregarPalabras.css">
+
+</head>
+
+<body>
+
+    <main class="main">
+
+        <audio src="../sounds/perder.wav" data-audio></audio>
+
+        <div class="ganastePerdiste__cabeza" data-cabeza>
+            <div class="ganastePerdiste__ojo ojo1" data-ojos>
+                <div class="ganastePerdiste_lineaOjo lineaOjo1--der"></div>
+                <div class="ganastePerdiste_lineaOjo lineaOjo1--izq"></div>
+            </div>
+            <div class="ganastePerdiste__ojo ojo2" data-ojos>
+                <div class="ganastePerdiste_lineaOjo lineaOjo2--der"></div>
+                <div class="ganastePerdiste_lineaOjo lineaOjo2--izq"></div>
+            </div>
+        </div>
+
+
+        <h1 class="ganastePerdiste__titulo invisible" data-titulo>¡Perdiste! <span class="ganastePerdiste__frasePalabra invisible" data-palabra-contenedor>La palabra era: <span class="ganastePerdiste__palabra" data-palabra> CARAMELO </span></span></h1>
+  
+
+        <div class="menu invisible" data-menu>
+            <button class="menu__boton boton botonPrincipal" name="iniciarJuego" type="button" data-iniciar>Volver a jugar</button>
+            <button class="menu__boton boton botonSecundario" name="agregarPalabras" type="button"
+                data-agregar>Agregar Palabras</button>
+        </div>
+
+        <div class="agregarPalabras invisible" data-ventana>
+
+            <div class="agregarPalabras__ventana">
+
+                <div class="agregarPalabras__contenedor">
+ 
+                    <svg class="agregarPalabras__btn__cerrar" data-cerrar width="82" height="83" viewBox="0 0 82 83" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M31.4608 31.4098L50.8215 51.0164M50.8215 31.4098L31.4608 51.0164M79.8624 41.2131C79.8624 46.3627 78.8608 51.4618 76.9149 56.2193C74.969 60.9769 72.1168 65.2997 68.5212 68.941C64.9256 72.5823 60.657 75.4707 55.9591 77.4413C51.2613 79.412 46.2261 80.4263 41.1412 80.4263C36.0562 80.4263 31.0211 79.412 26.3232 77.4413C21.6253 75.4707 17.3567 72.5823 13.7611 68.941C10.1655 65.2997 7.31332 60.9769 5.3674 56.2193C3.42148 51.4618 2.41992 46.3627 2.41992 41.2131C2.41992 30.8132 6.49947 20.8391 13.7611 13.4853C21.0227 6.13137 30.8716 2 41.1412 2C51.4107 2 61.2596 6.13137 68.5212 13.4853C75.7828 20.8391 79.8624 30.8132 79.8624 41.2131Z"
+                            stroke="#A3A3A3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class="agregarPalabras__titulo texto">¡Agregá una nueva palabra!</span>
+
+                    <div class="agregarPalabras__input__contenedor">
+
+                        <input type="text" class="agregarPalabras__input" data-input placeholder="Escribir palabra" maxlength="35">
+                        <div class="agregarPalabras__input__contador__contenedor">
+                            <span class="invisible mensaje--normal" data-input-mensaje>Hola</span>
+                            <span class="agregarPalabras__input__contador contador--normal" data-contador-input>0/8</span>
+                        </div>
+
+                        <div class="agregarPalabras__mensajeContenedor invisible" data-cartel>
+                            <div class="agregarPalabras__mensajeTriangulo"></div>
+                            <div class="agregarPalabras__mensajeCuadrado">
+                                <span class="agregarPalabras__mensaje">¡Palabra agregada!</span>
+                            </div>    
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="agregarPalabras__botones__contenedor">
+                        <button class="agregarPalabras__botones botonAgregarInactivo" type="button"
+                            name="agregar" data-agregar-ventana>Agregar</button>
+                        <button class="agregarPalabras__botones botonJugar" type="button" name="jugar"
+                            data-jugar>Jugar</button>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <script type="module" src="ganaste-perdiste.js"></script>
+    <script src="perdiste.js"></script>
+    <script type="module" src="agregar-palabras.js"></script>
+
+</body>
+
+</html>

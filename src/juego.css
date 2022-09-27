@@ -1,0 +1,394 @@
+/* ------------------------ HEADER ---------------------------- */
+
+.header{
+    /* height: 12vh; */
+    margin: 6vh 4vw 0 4vw;
+    /* width: 92vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo{
+    inline-size: min-content;
+    font-size: 4rem;
+    text-align: start;
+    line-height: 2.8rem;
+    align-self: start;
+}
+
+.header__logo__game{
+    font-size: 3.8rem;
+}
+
+.header__botones{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__btn{
+    cursor: pointer;
+    width: 3.6rem;
+    height: 3.6rem;
+    border: 0.3rem solid var(--color-blanco);
+    border-radius: 50%;
+    /* margin-bottom: 1.5vh; */
+    margin-left: 0.6vw;
+    transition: .3s ease all;
+}
+
+.header__btn:hover{
+    background-color: rgba(217, 217, 217, 0.2);
+    width: 6rem;
+    border-radius: 2rem;
+}
+
+.home{
+    background: url(../imgs/home.svg) center no-repeat;
+    background-size: 2.4rem;
+}
+
+.restart{
+    background: url(../imgs/restart.svg) center no-repeat;
+    background-size: 2.4rem;
+}
+
+/* ------------------------ MAIN ---------------------------- */
+
+.main{
+    /* height: 82vh; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 6%;
+
+    /* inline-size: min-content; */
+    /* inline-size: min-content; */
+}
+
+/* ------------------------ DIBUJO ---------------------------- */
+
+.dibujoContenedor{
+    /* height: 60vh; */
+    margin: 4vh auto 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dibujo{
+    position: relative;
+    background-color: var(--color-blanco);
+    box-shadow: 0px 0px 8.07303px var(--color-blanco);
+    border-radius: 3rem;
+}
+
+
+.grupo1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo1__base{
+    top: 0.4rem;
+    width: 1rem;
+    height: 19rem;
+    
+}
+
+.grupo1__base2{
+    width: 8rem;
+    height: 1rem;
+}
+
+.grupo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo2__base3{
+    left: -4.5rem;
+    height: 1rem;
+    width: 23rem;
+    
+}
+
+.grupo2__base4{
+    left: -12rem;
+    height: 1rem;
+    width: 11rem;
+    transform: rotate(310deg);
+}
+
+.grupo3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    top: -2rem;
+    left: 14rem;
+}
+
+.grupo3__base5{
+    left: -7.5rem;
+    width: 1rem;
+    height: 5rem;
+}
+
+
+.grupo3__cabeza{
+    position: relative;
+    border: 0.7rem solid var(--color-blanco);
+    left: -7.5rem;
+    top: -0.6rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8.07303px var(--color-blanco);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.grupo3__ojo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -0.8rem;
+}
+
+.ojo1{
+    right: -0.2rem;
+}
+
+.ojo2{
+    right: 0.2rem;
+}
+
+.grupo3__lineaOjo{
+    height: 1.1rem;
+    width: 0.3rem;
+    position: absolute;
+}
+
+.lineaOjo1--der{
+    transform: rotate(134deg);
+}
+
+.lineaOjo1--izq{
+    transform: rotate(-136deg);
+}
+
+.lineaOjo2--der{
+    transform: rotate(-134deg);
+}
+
+.lineaOjo2--izq{
+    transform: rotate(136deg);
+}
+
+.grupo3__torsoContenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo3__brazoIzquierdo{
+    top: -1rem;
+    left: -8.5rem;
+    width: 0.8rem;
+    height: 5rem;
+    transform: rotate(-130deg);
+}
+
+.grupo3__torso{
+    top: -1rem;
+    left: -7.5rem;
+    width: 0.8rem;
+    height: 6rem;
+}
+
+.grupo3_brazoDerecho {
+    top: -1rem;
+    left: -6.5rem;
+    width: 0.8rem;
+    height: 5rem;
+    transform: rotate(130deg);
+}
+
+.grupo3__piernas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grupo3__piernaIzquierda{
+    top: -2rem;
+    left: -8.5rem;
+    width: 0.8rem;
+    height: 5rem;
+    transform: rotate(-140deg);
+}
+
+.grupo3__piernaDerecha{
+    top: -2rem;
+    left: -6.5rem;
+    width: 0.8rem;
+    height: 5rem;
+    transform: rotate(140deg);
+}
+
+/* ------------------------ LETRAS ---------------------------- */
+
+.palabraContenedor{
+    height: 6vh;
+    margin: 6vh 4vw 0 4vw;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+    inline-size: min-content;
+}
+
+.letraGrupo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.6rem;
+}
+
+.letra{
+    color: #FEFEFE;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+}
+
+.linea{
+    top: 0.4rem;
+    width: 3rem;
+    height: 0.6rem;
+
+    position: relative;
+    background-color: var(--color-blanco);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 3rem;
+}
+
+
+.letrasErradas{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+    color: rgba(255, 255, 255, 0.35);
+    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    letter-spacing: 1vw;
+}
+
+/* ----------------------------- CARTEL ----------------------------- */
+
+.cartel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.18);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartelContenedor{
+    width: 45rem;
+    height: 25rem;
+    background: #FAFAFA;
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cartel__texto{
+    inline-size: min-content;
+    width: 40%;
+    overflow: hidden;
+    color: #393939;
+    font-size: 2rem;
+}
+
+.cartel__palabra{
+    color: #FF962E;
+    font-family: 'Righteous';
+    font-size: 2.5rem;
+}
+
+.cartel__cabeza {
+
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8.07303px #A430FF;
+    border: 2rem solid #A430FF;
+
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.ojo {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: -1rem;
+}
+
+.ojo1 {
+    right: -0.2rem;
+}
+
+.ojo2 {
+    right: 0.2rem;
+}
+
+.lineaOjo {
+    position: absolute;
+    width: 3.3rem;
+    height: 0.8rem;
+
+    background-color: #A430FF;
+    box-shadow: 0px 0px 8.07303px #A430FF;
+    border-radius: 3rem;
+}
+
+.lineaOjo1--der {
+    transform: rotate(160deg);
+}
+
+.lineaOjo1--izq {
+    transform: rotate(-110deg);
+}
+
+.lineaOjo2--der {
+    transform: rotate(-160deg);
+}
+
+.lineaOjo2--izq {
+    transform: rotate(110deg);
+}
+
+
+/* ----------------------------- FIN CARTEL ----------------------------- */

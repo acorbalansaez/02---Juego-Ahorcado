@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="juego.css">
+</head>
+
+
+<body>
+
+    <header class="header">
+        <h1 class="header__logo logo">Ahorcado <span class="header__logo__game logoGame"> game</span></h1>
+        <div class="header__botones">
+            <button class="header__btn home" type="button" name="home" data-home></button>
+            <button class="header__btn restart" type="button" name="restart" data-restart></button>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <audio src="../sounds/punto5.wav" data-punto></audio>
+        <audio src="../sounds/error2.wav" data-error></audio>
+
+        <div class="dibujoContenedor">
+
+            <div class="grupo1">
+                <div class="grupo1__base dibujo"></div>
+                <div class="grupo1__base2 dibujo"></div>
+            </div>
+
+            <div class="grupo2">
+                <div class="grupo2__base3 dibujo"></div>
+                <div class="grupo2__base4 dibujo"></div>
+
+                <div class="grupo3">
+                    <div class="grupo3__base5 dibujo"></div>
+    
+                    <div class="grupo3__cabeza invisible" data-cabeza>
+                        <div class="grupo3__ojo ojo1 invisible" data-ojo-izquierdo  data-ojos-dibujo> 
+                            <div class="grupo3__lineaOjo lineaOjo1--der dibujo"></div>
+                            <div class="grupo3__lineaOjo lineaOjo1--izq dibujo"></div>
+                        </div>
+                        <div class="grupo3__ojo ojo2 invisible" data-ojo-derecho data-ojos-dibujo>
+                            <div class="grupo3__lineaOjo lineaOjo2--der dibujo"></div>
+                            <div class="grupo3__lineaOjo lineaOjo2--izq dibujo"></div>
+                        </div>
+                    </div>
+                    <div class="grupo3__torsoContenedor">
+                        <div class="grupo3__brazoIzquierdo dibujo invisible" data-brazo-izquierdo></div>
+                        <div class="grupo3__torso dibujo invisible" data-torso></div>
+                        <div class="grupo3_brazoDerecho dibujo invisible" data-brazo-derecho></div>
+                    </div>
+                    <div class="grupo3__piernas">
+                        <div class="grupo3__piernaIzquierda dibujo invisible" data-pierna-izquierda></div>
+                        <div class="grupo3__piernaDerecha dibujo invisible" data-pierna-derecha></div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="palabraContenedor" data-contenedor-palabra>
+
+            <!-- <div class="letraGrupo">
+                <span class="letra">H</span>
+                <div class="linea dibujo"></div>
+            </div> -->
+            
+        </div>
+
+        <div>
+            <span class="letrasErradas" data-letras-erradas></span>
+        </div>
+
+    </main>
+
+    <div class="cartel invisible" data-cartel>
+        <div class="cartelContenedor">
+            <span class="cartel__texto">La palabra era: <span class="cartel__palabra" data-cartel-palabra></span></span>
+            <div class="cartel__cabeza">
+                <div class="ojo ojo1" data-ojos-cartel>
+                    <div class="lineaOjo lineaOjo1--der"></div>
+                    <div class="lineaOjo lineaOjo1--izq"></div>
+                </div>
+                <div class="ojo ojo2" data-ojos-cartel>
+                    <div class="lineaOjo lineaOjo2--der"></div>
+                    <div class="lineaOjo lineaOjo2--izq"></div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+
+    <script type="module" src="juego.js"></script>
+
+</body>
+
+</html>

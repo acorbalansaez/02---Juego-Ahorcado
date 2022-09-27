@@ -1,0 +1,147 @@
+.agregarPalabras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+
+}
+
+.agregarPalabras__ventana {
+    background: var(--color-gris);
+    border-radius: 2rem;
+    width: 50vw;
+    height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregarPalabras__contenedor {
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.agregarPalabras__btn__cerrar {
+    align-self: end;
+    cursor: pointer;
+    height: 15%;
+}
+
+.agregarPalabras__titulo {
+    height: 40%;
+    width: 50%;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.agregarPalabras__input__contenedor {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.agregarPalabras__input {
+    background: #FFFFFF;
+    border: 0.18rem solid #E0E0E0;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+
+/* .agregarPalabras__input:focus{
+    border: 0.18rem solid #A3A3A3;
+} */
+
+.agregarPalabras__input--error {
+    border: 0.18rem solid #EB5757;
+}
+
+.agregarPalabras__input::placeholder {
+    color: #BCBCBC;
+    font-size: 1.1rem;
+}
+
+.agregarPalabras__input__contador__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 0.4rem;
+}
+
+.agregarPalabras__input__contador {
+    align-self: end;
+}
+
+.contador--normal {
+    color: #BCBCBC;
+}
+
+.contador--error {
+    color: #EB5757;
+}
+
+.mensaje--normal {
+    color: #BCBCBC;
+}
+
+.mensaje--error {
+    color: #EB5757;
+}
+
+.agregarPalabras__mensajeContenedor {
+    position: relative;
+    top: -1.2rem;
+}
+
+.agregarPalabras__mensajeTriangulo {
+    width: 0;
+    height: 0;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid #FF962E;
+
+    position: relative;
+    left: 1rem;
+}
+
+.agregarPalabras__mensajeCuadrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: min-content;
+
+    width: 12rem;
+    height: 100%;
+    background-color: #FF962E;
+    border-radius: 0.6rem;
+}
+
+.agregarPalabras__mensaje {
+    color: white;
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+.agregarPalabras__botones__contenedor {
+    align-self: end;
+    height: 15%;
+    display: flex;
+    width: 60%;
+}
+
+.agregarPalabras__botones {
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 0.2% 0.3%;
+    border-radius: 50px;
+    margin-left: 1rem;
+}
