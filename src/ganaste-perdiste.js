@@ -30,9 +30,9 @@ function iniciarAnimacion() {
 }
 
 // PROHIBIR SCROLL
-window.addEventListener('scroll', () => {
-    window.scrollTo(0, 0);
-});
+// window.addEventListener('scroll', () => {
+//     window.scrollTo(0, 0);
+// });
 
 // BOTÓN JUGAR
 jugar.addEventListener('click', () => {
